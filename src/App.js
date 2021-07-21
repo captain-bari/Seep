@@ -54,11 +54,12 @@ function App() {
 
   const clickA =()=>{
     var a = prompt("What would you like to rename Team A , Sagar ?")
-    setteama(a)
+    if (a != ""){ setteama(a)}
+   
   }
   const clickB =()=>{
     var a = prompt("What would you like to rename Team B , Sagar ?")
-    setteamb(a)
+    if (a != ""){ setteamb(a)}
   }
 
 
