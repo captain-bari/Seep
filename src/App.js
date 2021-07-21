@@ -71,8 +71,8 @@ function App() {
       </Row><div className="restapp">
       <Row><br></br></Row>
       <Row>
-        <Col><div class="ui input"><input type="number" placeholder="Team A Round Score" id="inputA"/></div></Col>
-        <Col><div class="ui input"><input type="number" placeholder="Team B Round Score" id="inputB"/></div></Col>
+        <Col><div class="ui input"><input type="number" placeholder={teama + " Round Score"} id="inputA"/></div></Col>
+        <Col><div class="ui input"><input type="number" placeholder={teamb + " Round Score"} id="inputB"/></div></Col>
       </Row>
       <Row><br></br></Row>
       <Row>
