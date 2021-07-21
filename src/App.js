@@ -12,13 +12,15 @@ function App() {
 
   const [myArray, setMyArray] = useState([])
   const [myArray2, setMyArray2] = useState([])
+  const [teama, setteama] = useState("Team A")
+  const [teamb, setteamb] = useState("Team B")
 
   var a_score =0
   var b_score =0
 
   const add = () =>{
     if (document.getElementById("inputA").value === "" || document.getElementById("inputB").value === ""){
-      alert("Make sure You have added Values for both Team A and Team B")
+      alert("What is this Sagar ? Are you dumb ? Add Values for both Team A and Team B. You CheAteR !!")
       return
     }
     var a = myArray
@@ -39,10 +41,10 @@ function App() {
 
     if (a_score > b_score) {
       setdiff(a_score - b_score)
-      setwin("Team A")
+      setwin(teama)
     } else {
       setdiff(b_score - a_score)
-      setwin("Team B")
+      setwin(teamb)
     }
 
     document.getElementById("inputB").value=""
@@ -50,11 +52,21 @@ function App() {
 
   }
 
+  const clickA =()=>{
+    var a = prompt("What would you like to rename Team A , Sagar ?")
+    setteama(a)
+  }
+  const clickB =()=>{
+    var a = prompt("What would you like to rename Team B , Sagar ?")
+    setteamb(a)
+  }
+
+
   return (
     <div className="App">
       <Row className="heading">
-        <Col align="center"><h1 className="heading">Team A</h1></Col>
-        <Col align="center"><h1 className="heading">Team B</h1></Col>
+        <Col align="center"><h1 className="heading" onClick={clickA}>{teama}</h1></Col>
+        <Col align="center"><h1 className="heading" onClick={clickB}>{teamb}</h1></Col>
       </Row><div className="restapp">
       <Row><br></br></Row>
       <Row>
