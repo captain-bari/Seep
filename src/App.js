@@ -65,6 +65,7 @@ function App() {
 
   return (
     <div className="App">
+      <form>
       <Row className="heading">
         <Col align="center"><h1 className="heading" onClick={clickA}>{teama}</h1></Col>
         <Col align="center"><h1 className="heading" onClick={clickB}>{teamb}</h1></Col>
@@ -95,9 +96,9 @@ function App() {
         </Col>
       </Row>
       <Row>
-      <Alert variant="secondary"><b>{win}</b> is winning by <b>{diff}</b></Alert>
+      <Alert variant="secondary" className="bigfont"><b>{win}</b> is winning by <b>{diff}</b></Alert>
       </Row>
-    </div></div>
+    </div></form></div>
   );
 }
 

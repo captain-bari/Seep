@@ -6,3 +6,6 @@
     background-color: hsl(0, 0%, 53%);
     font-family: 'Josefin Sans', cursive;
 }
+.bigfont {
+    font-size: large;
+}
